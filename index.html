@@ -2,67 +2,80 @@
 <html lang="en">
 
 <head>
+    <!-- Meta -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Stylesheet -->
+    <!-- Style Sheet -->
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="./img/396-3965659_clip2mp3-converter.png" type="image/x-icon">
-    <title>ConvertWeight - Weight Converter</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <!-- Font Icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <!-- FontsStyle -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <title>State Info Lookup - Sabi your state</title>
 </head>
 
 <body>
+    <!-- Header -->
     <header>
         <div class="container">
-            <div class="header-content">
-                <img src="./img/396-3965659_clip2mp3-converter.png" alt="">
-                <h1>ConvertWeight</h1>
-            </div>
+            <img src="./img/nig-flag.png" alt="">
+            <h1>State Info Lookup</h1>
+            <input type="text" id="input" placeholder="Enter State or abbr here...">
         </div>
     </header>
-    <main>
-        <div class="container">
-            <div class="main-content">
-                <input type="number" id="input" placeholder="Enter value...">
-                <div class="select">
-                    <select name="units" class="conversion-scale">
-                        <option value="all" selected>All</option>
-                        <option value="grams">grams</option>
-                        <option value="kilograms">Kilograms</option>
-                        <option value="ounce">Ounces</option>
-                    </select>
-                </div>
-            </div>
-        </div>
-    </main>
 
-    <div class="result">
-        <div class="container">
-            <div id="output">
-                <div id="grams-block">
-                    <div class="card-block">
-                        <h4>Grams:</h4>
-                        <div id="gramsOutput"></div>
-                    </div>
-                </div>
-                <div id="kilograms-block">
-                    <div class="card-block">
-                        <h4>Kilograms:</h4>
-                        <div id="kgOutput"></div>
-                    </div>
-                </div>
-                <div id="ounce-block">
-                    <div class="card-block">
-                        <h4>Ounces:</h4>
-                        <div id="ozOutput"></div>
-                    </div>
-                </div>
-            </div>
+    <!-- Contact Mobile -->
+    <div class="about-contact hide-on-lg">
+        <button class="plus">&plus;</button>
+        <ul class="tabs icons">
+            <li class="tab c1"><a href="https://www.github.com/blade-01" target="_blank"><i
+                        class="fab fa-github"></i></a>
+            </li>
+            <li class="tab c2"><a class="fab fa-codepen" href="https://www.codepen.io/Tobesh" target="_blank"><i></i></a>
+            </li>
+            <li class="tab c3"><a href="https://www.twitter.com/dr_annys" target="_blank"><i
+                        class="fab fa-twitter"></i></a>
+            </li>
+            <li class="tab c4"><a class="fab fa-instagram" href="https://www.instagram.com/blade_web" target="_blank"><i></i></a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Toggle -->
+    <div class="toggle-box">
+        <input type="checkbox" id="toggle" class="checkbox" />
+        <label for="toggle" class="switch"></label>
+    </div>
+
+    <!-- Contact Desktop -->
+    <div id="contact" class="hide-on-sm">
+        <div class="contact-content">
+            <ul class="icons-1">
+                <hr class="hr">
+                <li class="c5"><a href="https://www.github.com/blade-01" target="_blank"><i
+                            class="fab fa-github"></i></a>
+                </li>
+                <li class="c6"><a class="fab fa-codepen" href="https://www.codepen.io/Tobesh" target="_blank"><i></i></a>
+                </li>
+                <li class="c7"><a href="https://www.twitter.com/dr_annys" target="_blank"><i
+                            class="fab fa-twitter"></i></a>
+                </li>
+                <li class="c8"><a class="fab fa-instagram" href="https://www.instagram.com/blade_web" target="_blank"><i></i></a>
+                </li>
+                <hr class="hr">
+            </ul>
         </div>
     </div>
 
+    <!-- Result/Output -->
+    <div class="result">
+        <div class="container">
+            <div class="result-list"></div>
+        </div>
+    </div>
 
-
-    <!-- JS -->
     <script src="main.js"></script>
 </body>
 

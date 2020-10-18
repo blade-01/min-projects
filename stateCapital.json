@@ -1,0 +1,334 @@
+[{
+        "name": "Abia",
+        "capital": "Umuahia",
+        "abbr": "ABI",
+        "lat": "5.524913",
+        "lng": "7.494613",
+        "title": "God's own State",
+        "postal": "440001"
+    },
+    {
+        "name": "Adamawa",
+        "capital": "Yola",
+        "abbr": "ADA",
+        "lat": "9.208394",
+        "lng": "12.481464",
+        "title": "Highest peak of the nation",
+        "postal": "640001"
+    },
+    {
+        "name": "Akwa Ibom",
+        "capital": "Uyo",
+        "abbr": "AKW",
+        "lat": "5.033333",
+        "lng": "7.92657",
+        "title": "Land of promise",
+        "postal": "520001"
+    },
+    {
+        "name": "Anambra",
+        "capital": "Awka",
+        "abbr": "ANM",
+        "lat": "6.21269",
+        "lng": "7.071986",
+        "title": "Light of the nation",
+        "postal": "420001"
+    },
+    {
+        "name": "Bauchi",
+        "capital": "Bauchi",
+        "abbr": "BAU",
+        "lat": "10.310321",
+        "lng": "9.843883",
+        "title": "Pearl of Tourism",
+        "postal": "740001"
+    },
+    {
+        "name": "Benue",
+        "capital": "Makurdi",
+        "abbr": "BEN",
+        "lat": "7.733746",
+        "lng": "8.52139",
+        "title": "Food basket of the Nation",
+        "postal": "970001"
+    },
+    {
+        "name": "Borno",
+        "capital": "Maiduguri",
+        "abbr": "BOR",
+        "lat": "11.846924",
+        "lng": "13.157122",
+        "title": "Home of peace",
+        "postal": "600001"
+    },
+    {
+        "name": "Bayelsa",
+        "capital": "Yenagoa",
+        "abbr": "BAY",
+        "lat": "4.926746",
+        "lng": "6.267636",
+        "title": "The Glory of All Lands",
+        "postal": "561001"
+    },
+    {
+        "name": "Cross River",
+        "capital": "Calabar",
+        "abbr": "CRR",
+        "lat": "4.958931",
+        "lng": "8.32695",
+        "title": "The people's paradise",
+        "postal": "540001"
+    },
+    {
+        "name": "Delta",
+        "capital": "Asaba",
+        "abbr": "DEL",
+        "lat": "6.198474",
+        "lng": "6.727431",
+        "title": "The Finger of God",
+        "postal": "320001"
+    },
+    {
+        "name": "Ebonyi",
+        "capital": "Abakaliki",
+        "abbr": "EBO",
+        "lat": "6.324851",
+        "lng": "8.11368",
+        "title": "The salt of the Nation",
+        "postal": "840001"
+    },
+    {
+        "name": "Edo",
+        "capital": "Benin City",
+        "abbr": "ED",
+        "lat": "6.338153",
+        "lng": "5.625749",
+        "title": "The Heart Beat of the Nation",
+        "postal": "300001"
+    },
+    {
+        "name": "Ekiti",
+        "capital": "Ado-Ekiti",
+        "abbr": "EKI",
+        "lat": "7.623289",
+        "lng": "5.22087",
+        "title": "Land of honour and integrity",
+        "postal": "360001"
+    },
+    {
+        "name": "Enugu",
+        "capital": "Enugu",
+        "abbr": "ENU",
+        "lat": "6.441321",
+        "lng": "7.498834",
+        "title": "Coal City State",
+        "postal": "400001"
+    },
+    {
+        "name": "Federal Capital Territory",
+        "capital": "Abuja",
+        "abbr": "FCT",
+        "lat": "9.083333",
+        "lng": "7.533333",
+        "title": "Centre of Unity",
+        "postal": "900001"
+    },
+    {
+        "name": "Gombe",
+        "capital": "Gombe",
+        "abbr": "GOM",
+        "lat": "10.28969",
+        "lng": "11.167288",
+        "title": "Jewel in the Savannah",
+        "postal": "760001"
+    },
+    {
+        "name": "Jigawa",
+        "capital": "Dutse",
+        "abbr": "JIG",
+        "lat": "11.75618",
+        "lng": "9.338959",
+        "title": "The New World",
+        "postal": "720001"
+    },
+    {
+        "name": "Imo",
+        "capital": "Owerri",
+        "abbr": "IM",
+        "lat": "5.483626",
+        "lng": "7.033248",
+        "title": "Earstern heartland",
+        "postal": "460001"
+    },
+    {
+        "name": "Kaduna",
+        "capital": "Kaduna",
+        "abbr": "KAD",
+        "lat": "10.526413",
+        "lng": "7.438795",
+        "title": "Centre of learning",
+        "postal": "700001"
+    },
+    {
+        "name": "Kebbi",
+        "capital": "Birnin Kebbi",
+        "abbr": "KEB",
+        "lat": "12.453889",
+        "lng": "4.1975",
+        "title": "Land of Equity",
+        "postal": "860001"
+    },
+    {
+        "name": "Kano",
+        "capital": "Kano",
+        "abbr": "KAN",
+        "lat": "12.002381",
+        "lng": "8.51316",
+        "title": "Centre of Commerce",
+        "postal": "800001"
+    },
+    {
+        "name": "Kogi",
+        "capital": "Lokoja",
+        "abbr": "KOG",
+        "lat": "7.796882",
+        "lng": "6.740481",
+        "title": "The Confluence State",
+        "postal": "260001"
+    },
+    {
+        "name": "Lagos",
+        "capital": "Ikeja",
+        "abbr": "LAG",
+        "lat": "6.596506",
+        "lng": "3.342052",
+        "title": "Centre of Excellence",
+        "postal": "100001"
+    },
+    {
+        "name": "Katsina",
+        "capital": "Katsina",
+        "abbr": "KAT",
+        "lat": "12.990823",
+        "lng": "7.601769",
+        "title": "State of Hospitality",
+        "postal": "820001"
+    },
+    {
+        "name": "Kwara",
+        "capital": "Ilorin",
+        "abbr": "KWA",
+        "lat": "8.496642",
+        "lng": "4.542143",
+        "title": "The State of Harmony",
+        "postal": "240001"
+    },
+    {
+        "name": "Nasarawa",
+        "capital": "Lafia",
+        "abbr": "NAS",
+        "lat": "8.493897",
+        "lng": "8.515316",
+        "title": "The home of Solid Materials",
+        "postal": "962001"
+    },
+    {
+        "name": "Niger",
+        "capital": "Minna",
+        "abbr": "NIG",
+        "lat": "9.615235",
+        "lng": "6.54776",
+        "title": "The Power State",
+        "postal": "920001"
+    },
+    {
+        "name": "Ogun",
+        "capital": "Abeokuta",
+        "abbr": "OGU",
+        "lat": "7.15571",
+        "lng": "3.345086",
+        "title": "The Gateway State",
+        "postal": "110001"
+    },
+    {
+        "name": "Ondo",
+        "capital": "Akure",
+        "abbr": "OND",
+        "lat": "7.25256",
+        "lng": "5.193118",
+        "title": "The Sunshine State",
+        "postal": "340001"
+    },
+    {
+        "name": "Rivers",
+        "capital": "Port Harcourt",
+        "abbr": "RIV",
+        "lat": "4.777423",
+        "lng": "7.013404",
+        "title": "Treasure base of the Nation",
+        "postal": "500001"
+    },
+    {
+        "name": "Oyo",
+        "capital": "Ibadan",
+        "abbr": "OY",
+        "lat": "7.377562",
+        "lng": "3.905907",
+        "title": "The pace setter State",
+        "postal": "200001"
+    },
+    {
+        "name": "Osun",
+        "capital": "Osogbo",
+        "abbr": "OSU",
+        "lat": "7.771045",
+        "lng": "4.556979",
+        "title": "Land of virtue",
+        "postal": "230001"
+    },
+    {
+        "name": "Sokoto",
+        "capital": "Sokoto",
+        "abbr": "SOK",
+        "lat": "13.048025",
+        "lng": "5.214285",
+        "title": "Seat of the Caliphate",
+        "postal": "840001"
+    },
+    {
+        "name": "Plateau",
+        "capital": "Jos",
+        "abbr": "PLA",
+        "lat": "9.92849",
+        "lng": "8.892118",
+        "title": "Home of peace and tourism",
+        "postal": "930001"
+    },
+    {
+        "name": "Taraba",
+        "capital": "Jalingo",
+        "abbr": "TAR",
+        "lat": "8.893668",
+        "lng": "11.359596",
+        "title": "Nature's gift to the Nation",
+        "postal": "660001"
+    },
+    {
+        "name": "Yobe",
+        "capital": "Damaturu",
+        "abbr": "YOB",
+        "lat": "11.746968",
+        "lng": "11.960826",
+        "title": "Pride of the sahel",
+        "postal": "320001"
+    },
+    {
+        "name": "Zamfara",
+        "capital": "Gusau",
+        "abbr": "ZAM",
+        "lat": "12.17024",
+        "lng": "6.664116",
+        "title": "Farming is our pride",
+        "postal": "860001"
+    }
+]
