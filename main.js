@@ -1,104 +1,57 @@
-// Variables
-const submitBtn = document.querySelector('.btn-submit');
-const todoList = document.querySelector('.todoList');
+// Set Variables
+const select = document.querySelector('select');
+const input = document.querySelector('#input');
+const output = document.querySelector('#output');
+const gramsOutput = document.getElementById('gramsOutput');
+const kgOutput = document.getElementById('kgOutput');
+const ozOutput = document.getElementById('ozOutput');
+const gramsBlock = document.getElementById('grams-block');
+const kgBlock = document.getElementById('kilograms-block');
+const ozBlock = document.getElementById('ounce-block');
 
-// DOMContentLoaded
-document.addEventListener('DOMContentLoaded', getTodos);
+// Event Listeners
+select.addEventListener('click', selectChange);
+input.addEventListener('input', getInput);
 
-// Adding to UI
-submitBtn.addEventListener('click', (e) => {
-    // Prevent default submit
-    e.preventDefault();
+// Hide Output
+output.style.visibility = 'hidden';
 
-    // Get input values
-    const input = document.getElementById('input').value;
-    if (input !== '') {
-        // Clear Fields
-        document.getElementById('input').value = '';
-        // Create Element
-        const todoContent = document.createElement('div');
-        todoContent.setAttribute('class', 'todo-content');
-        const p = document.createElement('p');
-        p.setAttribute('id', 'check');
-        p.appendChild(document.createTextNode(input));
-        const delBtn = document.createElement('button');
-        delBtn.setAttribute('class', 'fa fa-trash trash btn-del');
-        // Append
-        todoContent.appendChild(p);
-        todoContent.appendChild(delBtn);
-        todoList.appendChild(todoContent);
-        // Store
-        saveList(input);
-        // Remove Error Message
-        const borderBtm = document.getElementById('input');
-        submitBtn.style.color = 'var(--desaturated-dark-cyan)'
-        borderBtm.style.borderBottom = '1px solid var(--desaturated-dark-cyan)';
-    } else {
-        // Error Message
-        const borderBtm = document.getElementById('input');
-        submitBtn.style.color = 'var(--red)';
-        borderBtm.style.borderBottom = '1px solid var(--red)';
-        document.querySelector('form').classList.add('shake');
-    }
-});
-
-// Remove
-todoList.addEventListener('click', (e) => {
-    const item = e.target;
-    if (item.classList.contains('btn-del')) {
-        const todo = item.parentElement;
-        // Animation
-        todo.classList.add('remove');
-        removeLocalTodos(todo);
-        todo.addEventListener('transitionend', () => {
-            todo.remove();
-        })
-    };
-});
-
-// Local Storage
-function saveList(todo) {
-    let todos;
-    if (localStorage.getItem('todos') === null) {
-        todos = [];
-    } else {
-        todos = JSON.parse(localStorage.getItem('todos'));
-    }
-    todos.push(todo);
-    localStorage.setItem('todos', JSON.stringify(todos));
+// Function Call
+function getInput() {
+    output.style.visibility = 'visible';
+    const inputValue = input.value;
+    gramsOutput.innerHTML = inputValue / 0.0022046;
+    kgOutput.innerHTML = inputValue / 2.2046;
+    ozOutput.innerHTML = inputValue * 16;
 }
 
-function getTodos() {
-    let todos;
-    if (localStorage.getItem('todos') === null) {
-        todos = [];
+function selectChange() {
+    const inputValue = input.value;
+    output.style.visibility = 'visible';
+    if (select.value == 'grams') {
+        gramsBlock.style.display = 'none';
+        kgBlock.style.display = 'block';
+        ozBlock.style.display = 'block';
+        kgOutput.innerHTML = inputValue / 2.2046;
+        ozOutput.innerHTML = inputValue * 16;
+    } else if (select.value == 'kilograms') {
+        kgBlock.style.display = 'none';
+        gramsBlock.style.display = 'block';
+        ozBlock.style.display = 'block';
+        gramsOutput.innerHTML = inputValue / 0.0022046;
+        ozOutput.innerHTML = inputValue * 16;
+    } else if (select.value == 'ounce') {
+        ozBlock.style.display = 'none';
+        kgBlock.style.display = 'block';
+        gramsBlock.style.display = 'block';
+        gramsOutput.innerHTML = inputValue / 0.0022046;
+        kgOutput.innerHTML = inputValue / 2.2046;
     } else {
-        todos = JSON.parse(localStorage.getItem('todos'));
+        ozBlock.style.display = 'block';
+        gramsBlock.style.display = 'block';
+        kgBlock.style.display = 'block';
+        gramsOutput.innerHTML = inputValue / 0.0022046;
+        kgOutput.innerHTML = inputValue / 2.2046;
+        ozOutput.innerHTML = inputValue * 16;
     }
-    todos.forEach(todo => {
-        // Create Element
-        const todoContent = document.createElement('div');
-        todoContent.setAttribute('class', 'todo-content');
-        const p = document.createElement('p');
-        p.setAttribute('id', 'check');
-        p.appendChild(document.createTextNode(todo));
-        const delBtn = document.createElement('button');
-        delBtn.setAttribute('class', 'fa fa-trash trash btn-del');
-        // Append
-        todoContent.appendChild(p);
-        todoContent.appendChild(delBtn);
-        todoList.appendChild(todoContent);
-    });
-}
-
-function removeLocalTodos(todo) {
-    let todos;
-    if (localStorage.getItem('todos') === null) {
-        todos = [];
-    } else {
-        todos = JSON.parse(localStorage.getItem('todos'));
-    }
-    const todoIndex = todo.children[0].innerText;
-    todos.splice(todos.indexOf(todoIndex), 1);
-    localStorage.setItem('todos', JSON.stringify(todos));
 }

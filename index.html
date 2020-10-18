@@ -6,52 +6,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="./img/the-air-filter-company.svg" type="image/x-icon">
-    <title>Todoer</title>
+    <link rel="shortcut icon" href="./img/396-3965659_clip2mp3-converter.png" type="image/x-icon">
+    <title>ConvertWeight - Weight Converter</title>
 </head>
 
 <body>
-    <!-- Header -->
     <header>
         <div class="container">
             <div class="header-content">
-                <div class="logo">
-                    <img src="./img/the-air-filter-company.svg" alt="">
-                    <div class="text">
-                        <h1><i>Todoer</i></h1>
-                        <small>Todo-ing it better</small>
+                <img src="./img/396-3965659_clip2mp3-converter.png" alt="">
+                <h1>ConvertWeight</h1>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="main-content">
+                <input type="number" id="input" placeholder="Enter value...">
+                <div class="select">
+                    <select name="units" class="conversion-scale">
+                        <option value="all" selected>All</option>
+                        <option value="grams">grams</option>
+                        <option value="kilograms">Kilograms</option>
+                        <option value="ounce">Ounces</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="result">
+        <div class="container">
+            <div id="output">
+                <div id="grams-block">
+                    <div class="card-block">
+                        <h4>Grams:</h4>
+                        <div id="gramsOutput"></div>
+                    </div>
+                </div>
+                <div id="kilograms-block">
+                    <div class="card-block">
+                        <h4>Kilograms:</h4>
+                        <div id="kgOutput"></div>
+                    </div>
+                </div>
+                <div id="ounce-block">
+                    <div class="card-block">
+                        <h4>Ounces:</h4>
+                        <div id="ozOutput"></div>
                     </div>
                 </div>
             </div>
         </div>
-    </header>
-
-    <!-- Form -->
-    <div class="form">
-        <div class="container">
-            <div class="form-content">
-                <form action="" id="form">
-                    <input type="text" id="input" placeholder="Todo it...">
-                    <span><button class="btn-submit" type="submit">&RightArrow;</button></span>
-                </form>
-            </div>
-        </div>
     </div>
 
-    <!-- Your-Todo-List -->
-    <div class="todo" id="todo">
-        <div class="container">
-            <div class="todoList">
 
-            </div>
-        </div>
-    </div>
-    </div>
 
-    <script src="./main.js"></script>
+    <!-- JS -->
+    <script src="main.js"></script>
 </body>
 
 </html>
